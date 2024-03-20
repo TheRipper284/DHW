@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block title %}Prototipo IOT{% endblock %}
+
+{% load static %}
+{% block title-head %}
+<h1>Prototipo IOT</h1>
+{% endblock %}
+
+{% block content %}
+
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Prototipo IOT</h2>   
+            <p> Consta de un weareable para canes el cual tiene conectado un sensor de temperatura,
+                un sensor de pulso cardiaco del can. 
+            </p>
+            <h2 class="section-heading2">SENSOR DE PULSO CARDIACO</h2>
+                <img src="{% static 'img/pulsocardiaco.jpg' %}" alt="">
+                <p>El sensor de pulso cardiaco permite realizar la medición del ritmo cardiaco
+                    de una persona utilizando microcontroladores, con únicamente tres terminales 
+                    su sistema de conexión es bastante amigable (VCC, GND y señal de pulso).
+                    Con un Voltaje de alimentación: 5V.
+                </p>
+            <h2 class="section-heading2">SENSOR DE TEMPERATURA</h2> 
+            <img src="{% static 'img/temperatura.jpg' %}" alt="">
+            <p> El LM35 es adecuado para diversas aplicaciones incluidas electrodomésticos,
+                teléfonos móviles, juegos, discos duros, gestión de baterías,
+                instrumentos médicos portátiles e impresoras.
+                Tensión de alimentación: 4 V a 30 V.
+            </p>
+
+            <h2 class="section-heading2"> WAREABLE</h2>
+                
+        </div>
+        </div>  
+    </div>
+
+{% endblock %}

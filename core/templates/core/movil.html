@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{% block title %}Prototipo movil{% endblock %}
+
+{% load static %}
+{% block title-head %}
+<h1>Prototipo Movil</h1>
+{% endblock %}
+
+{% block content %}
+
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Prototipo Movil</h2>   
+            <p> Es una aplicación movil desarrollada con flutter el cual consta con una conexión
+                a una base de datos en la nube NOSQL con los datos del cuidador del canino, 
+                la conexión a sensores para el monitoreo de pulso cardiaco, temperatura. 
+                En el que se resguardaran los datos de monitoreo de manera constante,
+                para llevar un control sobre el canino. </p>
+                <h2 class="section-heading">Interfaces de la aplicación movil</h2>
+                <img src="{% static 'img/inicio.jpeg' %}" alt="">
+                <img src="{% static 'img/iniciarSesion.jpeg' %}" alt="">
+                <img src="{% static 'img/recuperacionDeContraseña.jpeg' %}" alt="">
+                <img src="{% static 'img/crearCuenta.jpeg' %}" alt="">
+                <img src="{% static 'img/datos.jpeg' %}" alt="">
+        </div>
+        </div>  
+    </div>
+
+{% endblock %}
